@@ -148,7 +148,7 @@
     </header>
     <div class="container">
         <h1>Join The Best Gym of Kolkata</h1>
-        <form action="noaction.php">
+        <form action="noaction.php" onSubmit="submitHandler()">
             <div class="form-group">
                 <input type="text" name="" placeholder="Enter Your Name">
             </div>
@@ -164,6 +164,11 @@
             <button class="btn">Submit</button>
         </form>
     </div>
+    <script>
+        const submitHandler = (event) => {
+            event.preventdefault();
+        };
+    </script>
 </body>
 
 </html>
